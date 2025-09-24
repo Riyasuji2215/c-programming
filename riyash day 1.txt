@@ -1,0 +1,115 @@
+code 1 FOR
+
+#include <stdio.h> 
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("You entered: %d\n", num);
+    printf("Program executed successfully!\n");
+
+    return 0;
+}
+
+
+O/P
+
+Enter a number: 15
+You entered: 15
+Program executed successfully!
+
+
+
+
+
+code 2 while
+
+#include <stdio.h>
+int main() {
+    int i = 1;  
+    while (i <= 10) {   
+        printf("%d\n", i);
+        i++;   
+    }
+    return 0;
+}
+
+
+O/P
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+
+
+
+code 3 do while 
+
+#include <stdio.h>
+int main() {
+    int i = 1;
+    do {
+        printf("Number: %d\n", i);
+        i++;
+    } while (i <= 5);
+    return 0;
+}
+
+
+O/P
+
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
+
+
+
+
+
+
+code 4 switch statment
+
+#include <stdio.h>
+int main() {
+    int choice;
+    printf("Enter a number between 1 and 4: ");
+    scanf("%d", &choice);
+    switch(choice) {
+        case 1:
+            printf("You chose One\n");
+            break;
+        case 2:
+            printf("You chose Two\n");
+            break;
+        case 3:
+            printf("You chose Three\n");
+            break;
+        case 4:
+            printf("You chose Four\n");
+            break;
+        default:
+            printf("Invalid choice! Please enter between 1 and 4.\n");
+    }
+    return 0;
+}
+
+
+O/P
+
+Enter a number between 1 and 4: 2
+You chose Two
+
+
+
