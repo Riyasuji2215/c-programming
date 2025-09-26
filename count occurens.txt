@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int n, target, count = 0;
+    printf("Enter number of elements: ");
+    if (scanf("%d", &n) != 1 || n <= 0) return 0;
+    int a[n];
+    printf("Enter %d integers:\n", n);
+    for (int i = 0; i < n; ++i) scanf("%d", &a[i]);
+    printf("Enter number to count: ");
+    scanf("%d", &target);
+    for (int i = 0; i < n; ++i)
+        if (a[i] == target) ++count;
+    printf("%d occurs %d time(s) in the array.\n", target, count);
+    return 0;
+}
